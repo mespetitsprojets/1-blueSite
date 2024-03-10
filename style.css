@@ -229,20 +229,21 @@
 .cvTitre{
     font-family: "Anonymous Pro", monospace;
     color:#F5F5F5;
-    font-size:2em;
+    font-size:2.3em;
 }
 
 .cvJob{
     font-family: "Anonymous Pro", monospace;
     color:#F5F5F5;
-    font-size:1.5em;
+    font-size:1.6em;
 }
 
 .cvLieu{
     font-family: "Anonymous Pro", monospace;
     color:#F5F5F5;
-    font-size:1.2em;
+    font-size:1.1em;
     font-style: italic;
+
 }
 
 .margin10{
@@ -391,7 +392,7 @@ margin:10px;
     }
 
     .cvTitre{
-        font-size:1.5em;
+        font-size:1.7em;
     }
     
     .cvJob{
