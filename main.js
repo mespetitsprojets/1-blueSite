@@ -17,6 +17,9 @@ function myMenu() {
     var element = document.getElementById("layerDarkBlue");
     element.classList.toggle("darkLightDarkBlue");
   
+    var element = document.getElementById("layerBlue2");
+    element.classList.toggle("darkLightBlue");
+
     if (toggle === true) {
         document.getElementById('liDark').src  = './img/linkedin.png';
     } else {
