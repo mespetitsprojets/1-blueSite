@@ -2,38 +2,35 @@
     margin:0;
 }
 
-.anonymous-pro-regular {
-    font-family: "Anonymous Pro", monospace;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .anonymous-pro-bold {
-    font-family: "Anonymous Pro", monospace;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .anonymous-pro-regular-italic {
-    font-family: "Anonymous Pro", monospace;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .anonymous-pro-bold-italic {
-    font-family: "Anonymous Pro", monospace;
-    font-weight: 700;
-    font-style: italic;
-  }
+.navbar{
+    width:100%;
+    height:70px;
+    display:flex;
+    position:fixed;
+    top:0px;
+    z-index: 10;
+
+}
 
 .master{
-    width:100vw;
-    height:100vh;
+    width:98.9vw;
+    height:auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
 .home{
+    box-sizing:border-box;
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: linear-gradient(90deg,#61A5C2, #89C2D9); */
+}
+
+.page-scroll{
     box-sizing:border-box;
     width:100%;
     height:auto;
@@ -56,35 +53,22 @@
     opacity:0.9;
     position: relative;
     width: 100%;
-    height: 100%;
-}
-
-.navbar{
-    width:100%;
-    height:70px;
-    display:flex;
-    position:fixed;
-
+    height: auto%;
+    background-position: center;
 }
 
 .logo{
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
     height: 30px;
     display: flex;
 }
 
-.menu{
+.menuPos{
     margin-left: 0px;
-    margin-top:15px;
-    height: 30px;
     display: flex;
-    justify-content: center;
-}
-
-.menu p{
-font-size: 40px;
-font-family: "Anonymous Pro", monospace;
-color:#F5F5F5;
+    align-items: center;
 }
 
 .contacts{
@@ -101,9 +85,15 @@ color:#F5F5F5;
 }
 
 .milieu{
-    padding-top:70px;
     display: flex;
-    height:85vh;
+    height:calc(100vh - 70px);
+    width:100%;
+    padding-top:70px;
+}
+
+.milieu-scroll{
+    display: flex;
+    height:100vh;
     width:100%;
 }
 
@@ -111,32 +101,39 @@ color:#F5F5F5;
     margin-left:50px;
     display: flex;
     justify-content: space-evenly;
-    width:100px;
+    width:80px;
 }
 
-.graph11{
-    width:1px;
-    height:100px;
-    background-color:#F5F5F5 ;
+.graph2{
+    margin-right:20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:80px;
 }
 
-.graph12{
-    width:1px;
-    height:300px;
-    background-color:#F5F5F5 ;
+.graph3{
+    margin-left:50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width:80px;
 }
 
-.graph13{
-    width:1px;
-    height:500px;
-    background-color:#F5F5F5 ;
+.graph4{
+    margin-right:0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:80px;
 }
 
 .corps{
     display: flex;
     flex-direction: column;
-    width:80%;
+    width:90%;
 }
+
 
 .entete{
     padding-top:150px;
@@ -165,6 +162,25 @@ color:#F5F5F5;
     font-style:italic;
 }
 
+.cvTitre{
+    font-family: "Anonymous Pro", monospace;
+    color:#F5F5F5;
+    font-size:2em;
+}
+
+.cvJob{
+    font-family: "Anonymous Pro", monospace;
+    color:#F5F5F5;
+    font-size:1.5em;
+}
+
+.cvLieu{
+    font-family: "Anonymous Pro", monospace;
+    color:#F5F5F5;
+    font-size:1.2em;
+    font-style: italic;
+}
+
 .intro{
     margin-left:20%;
     margin-right:10%;
@@ -180,35 +196,21 @@ color:#F5F5F5;
     font-size:30px;
 }
 
-.desc em{
+.margin10{
+    margin-left:1vw;
+}
+
+.margin30{
+    margin-left:10vw;
+}
+
+.margin50{
+    margin-left:20vw;
+}
+
+.desc span{
     color:#014F86;
     font-weight: 700;
-}
-
-.graph2{
-    margin-right:20px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    width:100px;
-}
-
-.graph21{
-    width:1px;
-    height:500px;
-    background-color:#61A5C2 ;
-}
-
-.graph22{
-    width:1px;
-    height:300px;
-    background-color:#61A5C2 ;
-}
-
-.graph23{
-    width:1px;
-    height:100px;
-    background-color:#61A5C2 ;
 }
 
 .sidebar{
@@ -238,13 +240,14 @@ color:#F5F5F5;
     background-color:#61A5C2;
     position:absolute;
     top: 60px;
-    left: -50%;
+    left: -100%;
     border-radius: 10px;
     transition:0.5s;
     display:flex;
     flex-direction: column;
     align-items: center;
     position:fixed;
+    z-index: 10;
 }
 
 .myMenuSwitch{
@@ -261,11 +264,21 @@ margin-bottom:5px;
 
 .myMenuText{
     height:50px;
+    width:100%;
+    display: flex;
     align-items: center;
     justify-content: center;
     font-family: "Anonymous Pro", monospace;
     color:#F5F5F5;
-    font-size:30px;
+    font-size:2em;
+    transition:0.2s;
+    }
+
+.myMenuText:hover{
+    height:50px;
+    color:#F5F5F5;
+    font-size:2.5em;
+    transition:0.2s;
     }
 
 .myMenuText p{

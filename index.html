@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>mon site vitrine</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,52 +13,56 @@
 <body>
 <div class="master">
 
-    <div class="home">
+    <div class="navbar">
+        <div class="logo">
+            <img src="./img/menu.png" onclick="myMenu()" alt="">
+        </div>
+
+        <!--
+        <div class="menuPos" onclick="myMenu()">
+            <p style="font-size: 40px;color:#F5F5F5;font-family:Anonymous Pro;">Menu</p>
+        </div>
+        -->       
+
+        <div class="contacts">
+            <div class="contactmargin"><a href="http://www.linkedin.com"><img id ="reseaux" src="./img/linkedin.png" alt=""></a></div>
+            <div class="contactmargin"><a href="http://www.instagram.com"><img id="reseaux" src="./img/instagram.png" alt=""></a></div>
+            <div class="contactmargin"><a href="mailto:envoyez-moi-un-mail@ouioui.fr"><img id="reseaux" src="./img/mail.png" alt=""></a></div>
+        </div>
+        
+    </div>
+
+    <div class="myMenu" id="myMenu">
+        <div class="myMenuLigne" style="margin-top:6px;"></div>
+        <div class="myMenuText" onclick="smoothScroll(document.getElementById('page1'))"><p >Introduction</p></div>
+        <div class="myMenuLigne"></div>
+        <div class="myMenuLigne"></div>
+        <div class="myMenuText"onclick="smoothScroll(document.getElementById('page2'))"><p>Compétences</p></div>
+        <div class="myMenuLigne"></div>
+        <div class="myMenuLigne"></div>
+        <div class="myMenuText"><p onclick="smoothScroll(document.getElementById('page3'))">Projets  </p></div>
+        <div class="myMenuLigne"></div>
+        <div class="myMenuLigne"></div>
+
+        <div class="myMenuContact">
+            <div class="contactmargin"><a href="http://www.linkedin.com"><img id ="reseaux" src="./img/linkedin.png" alt=""></a></div>
+            <div class="contactmargin"><a href="http://www.instagram.com"><img id="reseaux" src="./img/instagram.png" alt=""></a></div>
+            <div class="contactmargin"><a href="mailto:envoyez-moi-un-mail@ouioui.fr"><img id="reseaux" src="./img/mail.png" alt=""></a></div>
+        </div>
+
+        <div class="myMenuLigne"></div>
+    </div>
+
+    <div class="home" id="page1">
         <div class="background">
         <div class="layer">
+
         
-        <div class="myMenu" id="myMenu">
-            <div class="myMenuLigne"></div>
-            <div class="myMenuText"><p>Introduction</p></div>
-            <div class="myMenuLigne"></div>
-            <div class="myMenuLigne"></div>
-            <div class="myMenuText"><p>Compétences</p></div>
-            <div class="myMenuLigne"></div>
-            <div class="myMenuLigne"></div>
-            <div class="myMenuText"><p>Projets  </p></div>
-            <div class="myMenuLigne"></div>
-            <div class="myMenuLigne"></div>
-
-            <div class="myMenuContact">
-                <div class="contactmargin"><a href="http://www.linkedin.com"><img id ="reseaux" src="./img/linkedin.png" alt=""></a></div>
-                <div class="contactmargin"><a href="http://www.instagram.com"><img id="reseaux" src="./img/instagram.png" alt=""></a></div>
-                <div class="contactmargin"><a href="mailto:envoyez-moi-un-mail@ouioui.fr"><img id="reseaux" src="./img/mail.png" alt=""></a></div>
-            </div>
-
-            <div class="myMenuLigne"></div>
-        </div>
-
-        <div class="navbar">
-            <div class="logo">
-                <img src="./img/menu.png" onclick="myMenu()" alt="">
-            </div>
-            <div class="menu" onclick="myMenu()">
-                <p>Menu</p>
-            </div>          
-
-            <div class="contacts">
-                <div class="contactmargin"><a href="http://www.linkedin.com"><img id ="reseaux" src="./img/linkedin.png" alt=""></a></div>
-                <div class="contactmargin"><a href="http://www.instagram.com"><img id="reseaux" src="./img/instagram.png" alt=""></a></div>
-                <div class="contactmargin"><a href="mailto:envoyez-moi-un-mail@ouioui.fr"><img id="reseaux" src="./img/mail.png" alt=""></a></div>
-            </div>
-            
-        </div>
-
         <div class="milieu">
             <div class="graph1">
-                <div class="graph11"></div>
-                <div class="graph12"></div>
-                <div class="graph13"></div>
+                <div style="width:1px;height:100px;background-color:#F5F5F5;"></div>
+                <div style="width:1px;height:300px;background-color:#F5F5F5;"></div>
+                <div style="width:1px;height:500px;background-color:#F5F5F5;"></div>
             </div>
 
                 <div class="corps">
@@ -69,44 +73,94 @@
                     </div>
 
                     <div class="intro">
-                    <p class="desc">Passionné de nouvelles technologies et de web design, je vous accompagnerai dans vôtre projet étape par étape afin d'obtenir ce dont <em>vous</em> avez envie.</p>
+                    <p class="desc">Passionné de nouvelles technologies et de web design, je vous accompagnerai dans vôtre projet étape par étape afin de créer ce dont <span>vous</span> avez envie.</p>
                     </div>
                  </div>
 
             <div class="graph2">
-                <div class="graph21"></div>
-                <div class="graph22"></div>
-                <div class="graph23"></div>
+                <div style="width:1px;height:300px;background-color:#61A5C2;"></div>
+                <div style="width:1px;height:500px;background-color:#61A5C2;"></div>
+                <!-- <div style="width:1px;height:100px;background-color:#61A5C2;"></div> -->
             </div>
             
 
-            <div class="sidebar"></div>
+            <!-- <div class="sidebar"></div> -->
         </div>
-
+<!--
         <div class="down">
             <img src="./img/bottom.png" alt="">
         </div>
-
+    -->
     </div></div>
     </div>
 </div>
 
-<div class="master">
-    <div class="home">
-        <div class="layer">
+<div class="page-scroll" id="page2">
+    <div class="layer" >
 
-            <div class="milieu">
-        
-                    <div class="corps">
-                    </div>
-      
-                <div class="sidebar"></div>
+        <div class="milieu-scroll">
+            <div class="graph3">
+                <!-- <div style="width:1px;height:10vh;background-color:#F5F5F5;"></div> -->
+                <div style="width:1px;height:40vh;background-color:#F5F5F5;"></div>
+                <div style="width:1px;height:80vh;background-color:#F5F5F5;"></div>
             </div>
 
-        </div>
-        </div>
-</div>
+                <div class="corps">
 
+                    <!-- Expériences Pro -->
+                    <p class="cvTitre margin10" style="margin-top:30px;margin-bottom: 10px;">Expériences Professionelles</p>
+                    <p class="cvJob  margin10">Woofing en Ferme BIO et Apiculture</p>
+                    <p class="cvLieu margin10">Le Jardin de Valentin, Castillon-du-Gard (30), Août à Sept. 2023</p>
+                    <p class="cvDescription margin10"></p>
+                    <br>
+                    <p class="cvJob margin10">Maraîchage en Ferme Urbaine</p>
+                    <p class="cvLieu margin10">Culti’Cime, Aubervilliers (93) - Juin à Août 2023</p>
+                    <p class="cvDescription margin10"></p>
+                    <br>
+                    <p class="cvJob margin10">Chargé d’études</p>
+                    <p class="cvLieu margin10">BET ReeZome, Boulogne (92) - 2012 à 2016</p>
+                    <p class="cvDescription margin10"></p>
+
+                    <!-- Formations -->
+                    <p class="cvTitre margin30" style="margin-top:30px;margin-bottom: 10px;">Formations</p>
+                    <p class="cvJob margin30">Formation Agriculture XYZ</p>
+                    <p class="cvLieu margin30">Verger Urbain, Paris 18 - Mars à Août 2023</p>
+                    <p class="cvDescription margin30"></p>
+                    <br>
+                    <p class="cvJob margin30">Master 1 - Eco-énergécitien (alternance)</p>
+                    <p class="cvLieu margin30">ENSIATE, Bois Colombes (92) - 2016</p>
+                    <p class="cvDescription margin300"></p>
+                    <br>
+                    <p class="cvJob margin30">Licence professionelle - Génie Climatique (alternance)</p>
+                    <p class="cvLieu margin30">Université Lyon 1, Bourg-en-Bresse (01) - 2015</p>
+                    <p class="cvDescription margin30"></p>
+
+                    <!--
+                     Compétences
+                    <p class="cvTitre margin50" style="margin-top:30px;margin-bottom: 10px;">Expériences Professionelles</p>
+                    <p class="cvJob margin50">Woofing en Ferme BIO et Apiculture</p>
+                    <p class="cvLieu margin50">Le Jardin de Valentin, Castillon-du-Gard (30), Août à Sept. 2023</p>
+                    <p class="cvDescription"></p>
+                    <br>
+                    <p class="cvJob margin50">Maraîchage en Ferme Urbain</p>
+                    <p class="cvLieu margin50">Culti’Cime, Aubervilliers (93) - Juin à Août 2023</p>
+                    <p class="cvdescription margin50"></p>
+                    <br>
+                    <p class="cvJob margin50">Chargé d’études</p>
+                    <p class="cvLieu margin50">BET ReeZome, Boulogne (92) - 2012 à 2016</p>
+                    <p class="cvdescription margin50"></p>-->
+                 </div>
+
+            <div class="graph4">
+                <div style="width:1px;height:80vh;background-color:#61A5C2;"></div>
+                <div style="width:1px;height:50vh;background-color:#61A5C2;"></div>
+                <!-- <div style="width:1px;height:10vh;background-color:#61A5C2;"></div> -->
+            </div>
+
+    </div>
+    </div>
+
+<script src="jQuery.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
