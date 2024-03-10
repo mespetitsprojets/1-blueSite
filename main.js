@@ -1,9 +1,10 @@
-element = 0;
+var element = 0;
+var toggle = false;
 
 function myMenu() {
     var element = document.getElementById("myMenu");
     element.classList.toggle("myMenuSwitch");
-  }
+}
 
   function darkLight() {
 
@@ -15,7 +16,28 @@ function myMenu() {
 
     var element = document.getElementById("layerDarkBlue");
     element.classList.toggle("darkLightDarkBlue");
-  }
+  
+    if (toggle === true) {
+        document.getElementById('liDark').src  = './img/linkedin.png';
+    } else {
+       document.getElementById('liDark').src = './img/linkedinDark.png';
+    }
+
+    if (toggle === true) {
+        document.getElementById('instaDark').src  = './img/instagram.png';
+    } else {
+       document.getElementById('instaDark').src = './img/instagramDark.png';
+    }
+
+    if (toggle === true) {
+        document.getElementById('mailDark').src  = './img/mail.png';
+    } else {
+       document.getElementById('mailDark').src = './img/mailDark.png';
+    }
+
+
+    toggle = !toggle;
+}
 
   window.smoothScroll = function(target) {
     var scrollContainer = target;
