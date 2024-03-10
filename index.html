@@ -15,20 +15,16 @@
 
     <!-- NavBar -->
     <div class="navbar">
-        <div class="logo">
-            <img src="./img/menu.png" onclick="myMenu()" alt="">
+        <div class="openMenu" onclick="myMenu()">
+            <div class="openMenuLine"></div>
+            <div class="openMenuLine"></div>
+            <div class="openMenuLine"></div>
         </div>
-
-        <!--
-        <div class="menuPos" onclick="myMenu()">
-            <p style="font-size: 40px;color:#F5F5F5;font-family:Anonymous Pro;">Menu</p>
-        </div>
-        -->       
 
         <div class="contacts">
-            <div class="contactmargin"><a href="http://www.linkedin.com"><img id ="reseaux" src="./img/linkedin.png" alt=""></a></div>
-            <div class="contactmargin"><a href="http://www.instagram.com"><img id="reseaux" src="./img/instagram.png" alt=""></a></div>
-            <div class="contactmargin"><a href="mailto:envoyez-moi-un-mail@ouioui.fr"><img id="reseaux" src="./img/mail.png" alt=""></a></div>
+            <div class="navbarContact"><a href="http://www.linkedin.com"><img id ="reseaux" src="./img/linkedin.png" alt=""></a></div>
+            <div class="navbarContact"><a href="http://www.instagram.com"><img id="reseaux" src="./img/instagram.png" alt=""></a></div>
+            <div class="navbarContact"><a href="mailto:envoyez-moi-un-mail@ouioui.fr"><img id="reseaux" src="./img/mail.png" alt=""></a></div>
         </div>
         
     </div>
@@ -47,9 +43,9 @@
         <div class="myMenuLigne"></div>
 
         <div class="myMenuContact">
-            <div class="contactmargin"><a href="http://www.linkedin.com"><img id ="reseaux" src="./img/linkedin.png" alt=""></a></div>
-            <div class="contactmargin"><a href="http://www.instagram.com"><img id="reseaux" src="./img/instagram.png" alt=""></a></div>
-            <div class="contactmargin"><a href="mailto:envoyez-moi-un-mail@ouioui.fr"><img id="reseaux" src="./img/mail.png" alt=""></a></div>
+            <div class="menuContactDiv"><a href="http://www.linkedin.com"><img id ="reseaux" src="./img/linkedin.png" alt=""></a></div>
+            <div class="menuContactDiv"><a href="http://www.instagram.com"><img id="reseaux" src="./img/instagram.png" alt=""></a></div>
+            <div class="menuContactDiv"><a href="mailto:envoyez-moi-un-mail@ouioui.fr"><img id="reseaux" src="./img/mail.png" alt=""></a></div>
         </div>
 
         <div class="myMenuLigne"></div>
@@ -60,8 +56,8 @@
 
     <!-- Home / Page 1-->
     <div class="home" id="page1">
-        <div class="background">
-        <div class="layer">
+        <!-- <div class="background"> -->
+        <div class="layerBlue">
 
         
         <div class="milieu">
@@ -93,39 +89,47 @@
             <!-- <div class="sidebar"></div> -->
         </div>
 
-    </div></div>
+        <!-- </div> -->
+        </div>
     </div>
 </div>
 
 <div class="page-scroll" id="page2">
-    <div class="layer" >
+    <div class="corps">
+    <div class="layerDarkBlue" >
 
         <div class="milieu-scroll">
             <div class="graph3">
                 <!-- <div style="width:1px;height:10vh;background-color:#F5F5F5;"></div> -->
-                <div style="width:1px;height:40vh;background-color:#F5F5F5;"></div>
-                <div style="width:1px;height:80vh;background-color:#F5F5F5;"></div>
+                <div style="width:1px;height:40vh;background-color:#89C2D9;"></div>
+                <div style="width:1px;height:80vh;background-color:#89C2D9;"></div>
             </div>
 
-                <div class="corps">
+                <div class="corpsGrey">
 
                     <!-- Expériences Pro -->
                     <p class="cvTitre margin10" style="margin-top:30px;margin-bottom: 10px;">Expériences Professionelles</p>
                     <p class="cvJob  margin10">Woofing en Ferme BIO et Apiculture</p>
-                    <p class="cvLieu margin10">Le Jardin de Valentin, Castillon-du-Gard (30), Août à Sept. 2023</p>
+                    <p class="cvLieu margin10">Le Jardin de Valentin, Castillon-du-Gard (30) - Août à Sept. 2023</p>
                     <p class="cvDescription margin10"></p>
                     <br>
                     <p class="cvJob margin10">Maraîchage en Ferme Urbaine</p>
                     <p class="cvLieu margin10">Culti’Cime, Aubervilliers (93) - Juin à Août 2023</p>
                     <p class="cvDescription margin10"></p>
                     <br>
-                    <p class="cvJob margin10">Chargé d’études</p>
+                    <p class="cvJob margin10">Chargé d’études en Rénovation énergétique</p>
                     <p class="cvLieu margin10">BET ReeZome, Boulogne (92) - 2012 à 2016</p>
                     <p class="cvDescription margin10"></p>
 
                     <!-- Formations -->
+        
                     <p class="cvTitre margin30" style="margin-top:30px;margin-bottom: 10px;">Formations</p>
-                    <p class="cvJob margin30">Formation Agriculture XYZ</p>
+
+                    <p class="cvJob margin30">Modul'R - Métiers du numérique</p>
+                    <p class="cvLieu margin30">Belleville Citoyenne, Paris 20 - Mars 2024</p>
+                    <p class="cvDescription margin30"></p>
+                    <br>
+                    <p class="cvJob margin30">Agriculture XYZ - Agriculture urbaine</p>
                     <p class="cvLieu margin30">Verger Urbain, Paris 18 - Mars à Août 2023</p>
                     <p class="cvDescription margin30"></p>
                     <br>
@@ -158,11 +162,11 @@
                 <div style="width:1px;height:50vh;background-color:#61A5C2;"></div>
                 <!-- <div style="width:1px;height:10vh;background-color:#61A5C2;"></div> -->
             </div>
-
+    
     </div>
     </div>
+</div>
 
-<script src="jQuery.js"></script>
 <script src="main.js"></script>
 </body>
 </html>

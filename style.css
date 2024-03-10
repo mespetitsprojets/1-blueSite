@@ -48,8 +48,8 @@
     background-position: center;
 }
 
-.layer{
-    background: linear-gradient(90deg,#61A5C2, #89C2D9);
+.layerBlue{
+    background: linear-gradient(90deg,#61a5c2, #89C2D9);
     opacity:0.9;
     position: relative;
     width: 100%;
@@ -57,12 +57,46 @@
     background-position: center;
 }
 
-.logo{
+.layerDarkBlue{
+    background-color:#014F86;
+    opacity:0.9;
+    position: relative;
+    width: 100%;
+    height: auto%;
+    background-position: center;
+}
+
+/* .openMenu{
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
     height: 30px;
     display: flex;
+    flex-direction: column;
+} */
+
+.openMenu{
+    height: 50px;
+    width:60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.openMenu:hover{
+    opacity:0.5;
+    background-color: #014F86;
+}
+
+.openMenuLine{
+    /* margin-left:10px;
+    margin-top:10px; */
+    height:3px;
+    width:80%;
+    background-color:#F5F5F5;
 }
 
 .menuPos{
@@ -78,10 +112,17 @@
     justify-content: flex-end;
 }
 
-.contactmargin{
-    padding: 20px;
-    height: 40px;
+.navbarContact{
+    width:70px;
+    height: 30px;
     display: flex;
+    justify-content: space-evenly;
+    transition: 0.3;
+}
+
+.navbarContact:hover{
+    height: 40px;
+    transition: 0.3;
 }
 
 .milieu{
@@ -129,6 +170,12 @@
 }
 
 .corps{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.corpsGrey{
     display: flex;
     flex-direction: column;
     width:90%;
@@ -238,11 +285,10 @@
 
 .myMenu{
     width:350px;
-    height:280px;
+    height:240px;
     opacity:0.85;
     background-color:#61A5C2;
-    position:absolute;
-    top: 60px;
+    top: 55px;
     left: -100%;
     border-radius: 10px;
     transition:0.5s;
@@ -262,13 +308,14 @@
 width:90%;
 height:0.1px;
 background-color:#F5F5F5;
-margin-bottom:5px;
+margin-bottom:2px;
+margin-top:2px;
 }
 
 .myMenuText{
     display: flex;
     height:50px;
-    width:100%;
+    width:90%;
     font-family: "Anonymous Pro", monospace;
     color:#F5F5F5;
     font-size:2em;
@@ -278,10 +325,11 @@ margin-bottom:5px;
 }
 
 .myMenuText:hover{
-    height:50px;
-    color:#F5F5F5;
-    font-size:2.5em;
-    transition:0.2s;
+    opacity:0.4;
+    border-radius: 3px;
+    background-color: #014F86;
+    font-size:2.3em;
+    transition:0.3s;
 }
 
 .myMenuText p{
@@ -289,5 +337,20 @@ margin:10px;
 }
 
 .myMenuContact{
+    height:50px;
+    width:90%;
+    justify-content: center;
+    align-items: center;
     display:flex;
+}
+
+.menuContactDiv{
+    width:70px;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menuContactDiv:hover{
+    height: 40px;
 }
