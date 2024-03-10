@@ -220,12 +220,15 @@
     align-content: flex-end;
 }
 
-.down{
-    width: 100%;
-    display: flex;
-    margin: 10px;
-    align-items: flex-end;
-    justify-content: space-around;
+.downIcon{
+    opacity:0.8;
+    object-fit: cover;
+    height:30px;
+    width: auto;
+    position:fixed;
+    bottom:1em;
+    right:1em;
+    z-index: 10;
 }
 
 #reseaux{
@@ -234,7 +237,7 @@
 }
 
 .myMenu{
-    width:400px;
+    width:350px;
     height:280px;
     opacity:0.85;
     background-color:#61A5C2;
@@ -263,23 +266,23 @@ margin-bottom:5px;
 }
 
 .myMenuText{
+    display: flex;
     height:50px;
     width:100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: "Anonymous Pro", monospace;
     color:#F5F5F5;
     font-size:2em;
     transition:0.2s;
-    }
+    align-items: center;
+    justify-content: center;
+}
 
 .myMenuText:hover{
     height:50px;
     color:#F5F5F5;
     font-size:2.5em;
     transition:0.2s;
-    }
+}
 
 .myMenuText p{
 margin:10px;
