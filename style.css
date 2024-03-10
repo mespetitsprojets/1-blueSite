@@ -182,8 +182,9 @@
 
 
 .entete{
-    padding-top:15%;
+    padding-top:10%;
     padding-left:10%;
+    padding-bottom:5%;
     height:35%;
     display: flex;
     flex-direction: column;
@@ -357,6 +358,12 @@ margin:10px;
 }
 
 @media screen and (max-width:767px){
+
+    .entete{
+        padding-top: 20%;
+        padding-left: 10%;
+        padding-bottom: 0%;
+    }
 
     .Nom{
         font-size:3.5em;
