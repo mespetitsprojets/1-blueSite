@@ -139,7 +139,7 @@
 }
 
 .graph1{
-    margin-left:2em;
+    margin-left:1em;
     display: flex;
     justify-content: space-evenly;
     width:5%;
@@ -154,7 +154,7 @@
 }
 
 .graph3{
-    margin-left:2em;
+    margin-left:1em;
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
