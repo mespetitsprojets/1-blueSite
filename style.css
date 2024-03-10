@@ -3,7 +3,7 @@
 }
 
 .navbar{
-    width:100%;
+    width:100vw;
     height:70px;
     display:flex;
     position:fixed;
@@ -13,7 +13,7 @@
 }
 
 .master{
-    width:98.9vw;
+    width:100vw;
     height:auto;
     display: flex;
     flex-direction: column;
@@ -139,34 +139,33 @@
 }
 
 .graph1{
-    margin-left:50px;
+    margin-left:2em;
     display: flex;
     justify-content: space-evenly;
-    width:80px;
+    width:5%;
 }
 
 .graph2{
-    margin-right:20px;
+    margin-right:1em;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width:80px;
+    width:5%;
 }
 
 .graph3{
-    margin-left:50px;
+    margin-left:2em;
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
-    width:80px;
+    width:5%;
 }
 
 .graph4{
-    margin-right:0px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width:80px;
+    width:5%;
 }
 
 .corps{
@@ -183,30 +182,47 @@
 
 
 .entete{
-    padding-top:150px;
-    padding-left:100px;
-    height:50%;
+    padding-top:15%;
+    padding-left:10%;
+    height:35%;
     display: flex;
     flex-direction: column;
 }
 
-.Nom{
+.entete p{
     font-family: "Anonymous Pro", monospace;
     color:#F5F5F5;
-    font-size:70px;
+}
+
+
+
+.Nom{
+    font-size:5em;
 }
 
 .Job{
-    font-family: "Anonymous Pro", monospace;
-    color:#F5F5F5;
-    font-size:60px;
+    font-size:3.5em;
 }
 
 .Lieu{
+    font-size:2.5em;
+    font-style:italic;
+}
+
+.intro{
+    margin-left:20%;
+    margin-right:10%;
+    height:50%;
+    width:60%;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.intro p{
     font-family: "Anonymous Pro", monospace;
     color:#F5F5F5;
-    font-size:40px;
-    font-style:italic;
+    font-size: 1.8em;
 }
 
 .cvTitre{
@@ -228,21 +244,6 @@
     font-style: italic;
 }
 
-.intro{
-    margin-left:20%;
-    margin-right:10%;
-    height:50%;
-    width:700px;
-    justify-content: center;
-    text-align: center;
-}
-
-.desc{
-    font-family: "Anonymous Pro", monospace;
-    color:#F5F5F5;
-    font-size:30px;
-}
-
 .margin10{
     margin-left:1vw;
 }
@@ -255,7 +256,7 @@
     margin-left:20vw;
 }
 
-.desc span{
+.introDesc span{
     color:#014F86;
     font-weight: 700;
 }
@@ -353,4 +354,38 @@ margin:10px;
 
 .menuContactDiv:hover{
     height: 40px;
+}
+
+@media screen and (max-width:767px){
+
+    .Nom{
+        font-size:3.5em;
+    }
+    
+    .Job{
+        font-size:2em;
+    }
+    
+    .Lieu{
+        font-size:1.5em;
+        font-style:italic;
+    }
+
+    .intro p{;
+        font-size: 1.2em;
+    }
+
+    .cvTitre{
+        font-size:1.5em;
+    }
+    
+    .cvJob{
+        font-size:1.1em;
+    }
+    
+    .cvLieu{
+        font-size:0.8em;
+        font-style: italic;
+    }
+
 }
