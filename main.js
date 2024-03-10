@@ -5,6 +5,18 @@ function myMenu() {
     element.classList.toggle("myMenuSwitch");
   }
 
+  function darkLight() {
+
+    var element = document.getElementById("myMenu");
+    element.classList.toggle("darkLightMenu");
+
+    var element = document.getElementById("layerBlue");
+    element.classList.toggle("darkLightBlue");
+
+    var element = document.getElementById("layerDarkBlue");
+    element.classList.toggle("darkLightDarkBlue");
+  }
+
   window.smoothScroll = function(target) {
     var scrollContainer = target;
     do { //find scroll container
@@ -27,3 +39,4 @@ function myMenu() {
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }
+
