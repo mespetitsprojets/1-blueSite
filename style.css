@@ -114,15 +114,15 @@
 
 .navbarContact{
     margin-right:1em;
-    width:50px;
+    margin-top:-0.7em;
+    width:40px;
     height: auto;
-    display: flex;
-    justify-content: space-evenly;
+    /* display: flex;
+    justify-content: space-evenly; */
     transition: 0.3s;
 }
 
 .navbarContact:hover{
-    width:50px;
     opacity:0.5;
     background-color: #014F86;
     border-radius: 3px;
