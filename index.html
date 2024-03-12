@@ -15,7 +15,7 @@
 
     <!-- NavBar -->
     <div class="navbar">
-        <div class="openMenu" onclick="myMenu()">
+        <div class="openMenu hover-none" onclick="myMenu()">
             <div class="openMenuLine"></div>
             <div class="openMenuLine"></div>
             <div class="openMenuLine"></div>
@@ -28,21 +28,19 @@
         -->
             <div class="navbarContact" onclick="darkLight()"><img style="height:100%;width:100%" src="./img/night.png" alt=""></div>
         </div>
-        
     </div>
+
+    <div class="toggleMenuTextOn" id="toggleMenuTextOn"><p>Menu</p></div>
 
     <!-- My Menu -->   
     <div class="myMenu" id="myMenu">
         <div class="myMenuLigne" style="margin-top:6px;"></div>
         <div class="myMenuText" onclick="smoothScroll(document.getElementById('page1'))"><p >Introduction</p></div>
-        <div class="myMenuLigne"></div>
-        <div class="myMenuLigne"></div>
+        <div class="myMenuLigne"></div><div class="myMenuLigne"></div>
         <div class="myMenuText"onclick="smoothScroll(document.getElementById('page2'))"><p>Compétences</p></div>
-        <div class="myMenuLigne"></div>
-        <div class="myMenuLigne"></div>
+        <div class="myMenuLigne"></div><div class="myMenuLigne"></div>
         <div class="myMenuText"><p onclick="smoothScroll(document.getElementById('page3'))">Projets  </p></div>
-        <div class="myMenuLigne"></div>
-        <div class="myMenuLigne"></div>
+        <div class="myMenuLigne"></div><div class="myMenuLigne"></div>
 
         <div class="myMenuContact">
             <div class="menuContactDiv"><a href="http://www.linkedin.com"><img style="height:100%;width:100%" id ="liDark" src="./img/linkedin.png" alt=""></a></div>
@@ -89,8 +87,6 @@
                 <div style="width:1px;height:100px;background-color:#61A5C2;">
             </div>
             
-
-            <!-- <div class="sidebar"></div> -->
         </div>
 
         <!-- </div> -->
@@ -144,20 +140,6 @@
                 <p class="cvLieu margin30">Université Lyon 1, Bourg-en-Bresse (01) - 2015</p>
                 <p class="cvDescription margin30"></p>
 
-                <!--
-                    Compétences
-                <p class="cvTitre margin50" style="margin-top:30px;margin-bottom: 10px;">Expériences Professionelles</p>
-                <p class="cvJob margin50">Woofing en Ferme BIO et Apiculture</p>
-                <p class="cvLieu margin50">Le Jardin de Valentin, Castillon-du-Gard (30), Août à Sept. 2023</p>
-                <p class="cvDescription"></p>
-                <br>
-                <p class="cvJob margin50">Maraîchage en Ferme Urbain</p>
-                <p class="cvLieu margin50">Culti’Cime, Aubervilliers (93) - Juin à Août 2023</p>
-                <p class="cvdescription margin50"></p>
-                <br>
-                <p class="cvJob margin50">Chargé d’études</p>
-                <p class="cvLieu margin50">BET ReeZome, Boulogne (92) - 2012 à 2016</p>
-                <p class="cvdescription margin50"></p>-->
                 </div>
 
                 <div class="graph4">
@@ -183,7 +165,7 @@
             </div>
 
             <div class="corpsGrey" style="margin-top:2em">
-                <!-- Expériences Pro -->
+                <!-- Mes Projets -->
                 <p class="cvTitre" style="text-align:center;margin-bottom:20px">Mes Projets</p>
                 <p class="cvJob">Mon premier projet: blueSite</p>
                 <p class="cvLieu"></p>

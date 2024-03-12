@@ -4,10 +4,12 @@ var toggle = false;
 function myMenu() {
     var element = document.getElementById("myMenu");
     element.classList.toggle("myMenuSwitch");
+
+    var element = document.getElementById("toggleMenuTextOn");
+    element.classList.toggle("toggleMenuTextOff");
 }
 
-  function darkLight() {
-
+function darkLight() {
     var element = document.getElementById("myMenu");
     element.classList.toggle("darkLightMenu");
 
@@ -37,12 +39,10 @@ function myMenu() {
     } else {
        document.getElementById('mailDark').src = './img/mailDark.png';
     }
-
-
     toggle = !toggle;
 }
 
-  window.smoothScroll = function(target) {
+window.smoothScroll = function(target) {
     var scrollContainer = target;
     do { //find scroll container
         scrollContainer = scrollContainer.parentNode;
