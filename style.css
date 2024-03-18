@@ -290,10 +290,6 @@ img{
     z-index: 10;
 }
 
-.downIcon:hover{
-    height:40px;
-}
-
 /* FOOTER */
 
 .footer{
@@ -306,7 +302,7 @@ img{
 .myFooter{
     font-family: "Anonymous Pro", monospace;
     color:#F5F5F5;
-    font-size:0.9em;
+    font-size:1.1em;
     text-align: center;
 }
 
@@ -413,6 +409,9 @@ margin-top:2px;
         background-color: #014F86;
     }
 
+    .downIcon:hover{
+        height:40px;
+    }
 }
 
 /* MEDIA */
