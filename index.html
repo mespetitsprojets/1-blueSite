@@ -13,7 +13,7 @@
 <body>
 <div class="master" style="caret-color: transparent;user-select:none">
 
-    <!-- NavBar -->
+    <!----- NavBar ----->
     <div class="navbar">
         <div class="openMenu hover-none" onclick="myMenu()">
             <div class="openMenuLine"></div>
@@ -22,24 +22,20 @@
         </div>
 
         <div class="contacts">
-        <!--
-            <div class="navbarContact"><a href="http://www.linkedin.com"><img id ="reseaux" src="./img/linkedin.png" alt=""></a></div>
-            <div class="navbarContact"><a href="http://www.instagram.com"><img id="reseaux" src="./img/instagram.png" alt=""></a></div>
-        -->
             <div class="navbarContact" onclick="darkLight()"><img style="height:100%;width:100%" src="./img/night.png" alt=""></div>
         </div>
     </div>
 
     <div class="toggleMenuTextOn" id="toggleMenuTextOn"><p>Menu</p></div>
 
-    <!-- My Menu -->   
+    <!----- My Menu ----->   
     <div class="myMenu" id="myMenu">
         <div class="myMenuLigne" style="margin-top:6px;"></div>
-        <div class="myMenuText" onclick="smoothScroll(document.getElementById('page1'))"><p >Introduction</p></div>
+        <div class="myMenuText" onclick="smoothScroll(document.getElementById('page1'));myMenu()"><p >Introduction</p></div>
         <div class="myMenuLigne"></div><div class="myMenuLigne"></div>
-        <div class="myMenuText"onclick="smoothScroll(document.getElementById('page2'))"><p>Compétences</p></div>
+        <div class="myMenuText " onclick="smoothScroll(document.getElementById('page2'));myMenu()"><p>Compétences</p></div>
         <div class="myMenuLigne"></div><div class="myMenuLigne"></div>
-        <div class="myMenuText"><p onclick="smoothScroll(document.getElementById('page3'))">Projets  </p></div>
+        <div class="myMenuText" onclick="smoothScroll(document.getElementById('page3'));myMenu()"><p>Projets</p></div>
         <div class="myMenuLigne"></div><div class="myMenuLigne"></div>
 
         <div class="myMenuContact">
@@ -53,135 +49,151 @@
         <div class="myMenuLigne"></div>
     </div>
 
-    <!-- DownIcon -->
+    <!----- DownIcon ----->
     <img class="downIcon" src="./img/bottom.png" alt="">
 
-    <!-- Home / Page 1-->
+    <!----- Home / Page 1 ----->
     <div class="home" id="page1">
-        <!-- <div class="background"> -->
         <div class="layerBlue" id="layerBlue">
 
+            <div class="milieu">
+                <div class="graph1">
+                    <div style="width:1px;height:100px;background-color:#F5F5F5;"></div>
+                    <div style="width:1px;height:300px;background-color:#F5F5F5;"></div>
+                    <div style="width:1px;height:500px;background-color:#F5F5F5;"></div>
+                </div>
+
+                    <div class="corps">
+                        <div class="entete">
+                        <p class="Nom">Axel Ozgen</p>
+                        <p class="Job">Développeur Web Junior</p>
+                        <p class="Lieu">Paris 14</p>
+                        </div>
+
+                        <div class="intro">
+                        <p class="introDesc">Passionné de nouvelles technologies et de web design, je vous accompagnerai dans votre projet étape par étape afin de créer ce dont <span>vous</span> avez envie.</p>
+                        </div>
+                    </div>
+
+                <div class="graph2">
+                    <div style="width:1px;height:300px;background-color:#61A5C2;"></div>
+                    <div style="width:1px;height:500px;background-color:#61A5C2;"></div>
+                    <div style="width:1px;height:100px;background-color:#61A5C2;">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!----- Page 2 ----->
+    <div class="page-scroll" id="page2">
+        <div class="corps">
+        <div class="layerDarkBlue" id="layerDarkBlue">
+
+            <div class="milieu-scroll">
+                <div class="graph3">
+                    <div style="width:1px;height:40vh;background-color:#89C2D9;"></div>
+                    <div style="width:1px;height:80vh;background-color:#89C2D9;"></div>
+                </div>
+
+                <div class="corpsGrey">
+                    <p style="margin-top:2vh;text-align:center" class="cvTitre">Mes Compétences</p>
+                    <div class="align-left">
+                        <!--- Expériences Pro --->
+                        <p class="cvTitre" style="margin-top:30px;margin-bottom: 20px">Expériences Professionnelles</p>
+                        <p class="cvJob ">Woofing en Ferme BIO et Apiculture</p>
+                        <p class="cvLieu">Le Jardin de Valentin, Castillon-du-Gard (30) - Août à Sept. 2023</p>
+                        <p class="cvDescription"></p>
+                        <br>
+                        <p class="cvJob">Maraîchage en Ferme Urbaine</p>
+                        <p class="cvLieu">Culti’Cime, Aubervilliers (93) - Juin à Août 2023</p>
+                        <p class="cvDescription"></p>
+                        <br>
+                        <p class="cvJob">Chargé d’études en Rénovation énergétique</p>
+                        <p class="cvLieu">BET ReeZome, Boulogne (92) - 2012 à 2020</p>
+                        <p class="cvDescription"></p>
+                    </div>
+
+                    <div class="align-mid">
+                        <!--- Formations --->    
+                        <p class="cvTitre" style="margin-top:30px;margin-bottom: 20px;">Formations</p>
+
+                        <p class="cvJob">Modul'R - Webdesign & Métiers du numérique</p>
+                        <p class="cvLieu">Belleville Citoyenne, Paris 20 - Mars 2024</p>
+                        <p class="cvDescription"></p>
+                        <br>
+                        <p class="cvJob">Agriculture XYZ - Agriculture urbaine</p>
+                        <p class="cvLieu">Verger Urbain, Paris 18 - Mars à Août 2023</p>
+                        <p class="cvDescription"></p>
+                        <br>
+                        <p class="cvJob">Master 1 - Eco-énergéticien (alternance)</p>
+                        <p class="cvLieu">ENSIATE, Bois Colombes (92) - 2016</p>
+                        <p class="cvDescription"></p>
+                        <br>
+                        <p class="cvJob">Licence professionnelle - Génie Climatique (alternance)</p>
+                        <p class="cvLieu">Université Lyon 1, Bourg-en-Bresse (01) - 2015</p>
+                        <p class="cvDescription"></p>
+                    </div>
+
+                    <!--- Compétences ---> 
+                    <div class="align-left">
+                        <br>
+                    <p class="cvTitre" style="margin-top:30px;margin-bottom: 20px;">Langages de programmation</p>
+                    <p class="cvJob">HTML / CSS / JavaScript</p>
+                    </div>
+                    
+                </div>
+
+                    <div class="graph4">
+                        <div style="width:1px;height:80vh;background-color:#61A5C2;"></div>
+                        <div style="width:1px;height:50vh;background-color:#61A5C2;"></div>
+                    </div>
+                </div>
         
-        <div class="milieu">
-            <div class="graph1">
-                <div style="width:1px;height:100px;background-color:#F5F5F5;"></div>
-                <div style="width:1px;height:300px;background-color:#F5F5F5;"></div>
-                <div style="width:1px;height:500px;background-color:#F5F5F5;"></div>
-            </div>
+        </div>
+        </div>
+    </div>
 
-                <div class="corps">
-                    <div class="entete">
-                    <p class="Nom">Axel Ozgen</p>
-                    <p class="Job">Développeur Web Junior</p>
-                    <p class="Lieu">Paris 14</p>
+    <!----- Page 3 ----->
+    <div class="page-scroll" id="page3">
+        <div class="corps">
+            <div class="layerBlue" id="layerBlue2">
+
+                <div class="milieu-scroll">
+                    <div class="graph1">
+                        <div style="width:1px;height:40vh;background-color:#89C2D9;"></div>
+                        <div style="width:1px;height:80vh;background-color:#89C2D9;"></div>
                     </div>
 
-                    <div class="intro">
-                    <p class="introDesc">Passionné de nouvelles technologies et de web design, je vous accompagnerai dans votre projet étape par étape afin de créer ce dont <span>vous</span> avez envie.</p>
-                    </div>
-                 </div>
+                    <div class="corpsGrey" style="margin-top:2em">
+                        <!-- Mes Projets -->
+                        <p class="cvTitre" style="text-align:center;margin-bottom:20px">Mon projet : blueSite</p>
+                        <div class="column-container">
+                            <div class="column"><img style="border-radius:5px" src="./img/blueSite1.png"></div>
+                            <div class="column"><img style="border-radius:5px" src="./img/blueSite2.png"></div>
+                            <div class="column"><img style="border-radius:5px" src="./img/blueSite3.png"></div>
+                        </div>
+                        <div class="align-left">
+                            <p class="cvJob" style="margin-top:2vw;margin-bottom:5vw;margin-left:5vw;margin-right:5vw">Ce projet a été élaboré au cours de la formation Modul'R (BellevilleCitoyenne) lors de la semaine Intensive. Il est l'aboutissement d'une envie d'un thème simple, original et épuré, et dont chaque brique a été élaborée au fil des obstacles rencontrés et des recherches afin de les surmonter.</p>
+                        </div>
 
-            <div class="graph2">
-                <div style="width:1px;height:300px;background-color:#61A5C2;"></div>
-                <div style="width:1px;height:500px;background-color:#61A5C2;"></div>
-                <div style="width:1px;height:100px;background-color:#61A5C2;">
-            </div>
+                    </div>
+
+                    <div class="graph3">
+                        <div style="width:1px;height:80vh;background-color:#61A5C2;"></div>
+                        <div style="width:1px;height:50vh;background-color:#61A5C2;"></div>
+                    </div>
+                </div>
             
-        </div>
-
-        <!-- </div> -->
+            </div>
         </div>
     </div>
-</div>
-
-<div class="page-scroll" id="page2">
-    <div class="corps">
-    <div class="layerDarkBlue" id="layerDarkBlue">
-
-        <div class="milieu-scroll">
-            <div class="graph3">
-                <!-- <div style="width:1px;height:10vh;background-color:#F5F5F5;"></div> -->
-                <div style="width:1px;height:40vh;background-color:#89C2D9;"></div>
-                <div style="width:1px;height:80vh;background-color:#89C2D9;"></div>
-            </div>
-
-            <div class="corpsGrey">
-
-                <!-- Expériences Pro -->
-                <p class="cvTitre margin10" style="margin-top:30px;margin-bottom: 20px;">Expériences Professionnelles</p>
-                <p class="cvJob  margin10">Woofing en Ferme BIO et Apiculture</p>
-                <p class="cvLieu margin10">Le Jardin de Valentin, Castillon-du-Gard (30) - Août à Sept. 2023</p>
-                <p class="cvDescription margin10"></p>
-                <br>
-                <p class="cvJob margin10">Maraîchage en Ferme Urbaine</p>
-                <p class="cvLieu margin10">Culti’Cime, Aubervilliers (93) - Juin à Août 2023</p>
-                <p class="cvDescription margin10"></p>
-                <br>
-                <p class="cvJob margin10">Chargé d’études en Rénovation énergétique</p>
-                <p class="cvLieu margin10">BET ReeZome, Boulogne (92) - 2012 à 2020</p>
-                <p class="cvDescription margin10"></p>
-
-                <!-- Formations -->    
-                <p class="cvTitre margin30" style="margin-top:30px;margin-bottom: 20px;">Formations</p>
-
-                <p class="cvJob margin30">Modul'R - Webdesign & Métiers du numérique</p>
-                <p class="cvLieu margin30">Belleville Citoyenne, Paris 20 - Mars 2024</p>
-                <p class="cvDescription margin30"></p>
-                <br>
-                <p class="cvJob margin30">Agriculture XYZ - Agriculture urbaine</p>
-                <p class="cvLieu margin30">Verger Urbain, Paris 18 - Mars à Août 2023</p>
-                <p class="cvDescription margin30"></p>
-                <br>
-                <p class="cvJob margin30">Master 1 - Eco-énergéticien (alternance)</p>
-                <p class="cvLieu margin30">ENSIATE, Bois Colombes (92) - 2016</p>
-                <p class="cvDescription margin300"></p>
-                <br>
-                <p class="cvJob margin30">Licence professionnelle - Génie Climatique (alternance)</p>
-                <p class="cvLieu margin30">Université Lyon 1, Bourg-en-Bresse (01) - 2015</p>
-                <p class="cvDescription margin30"></p>
-
-                </div>
-
-                <div class="graph4">
-                    <div style="width:1px;height:80vh;background-color:#61A5C2;"></div>
-                    <div style="width:1px;height:50vh;background-color:#61A5C2;"></div>
-                    <!-- <div style="width:1px;height:10vh;background-color:#61A5C2;"></div> -->
-                </div>
-            </div>
     
-    </div>
-    </div>
+    <!----- My Footer ----->
+    <footer class="footer" id="footer">
+        <p class="myFooter">© 2024 Copyright: Ozgen Axel</p>
+    </footer>
 </div>
-
-<div class="page-scroll" id="page3">
-    <div class="corps">
-    <div class="layerBlue" id="layerBlue2">
-
-        <div class="milieu-scroll">
-            <div class="graph1">
-                <!-- <div style="width:1px;height:10vh;background-color:#F5F5F5;"></div> -->
-                <div style="width:1px;height:40vh;background-color:#89C2D9;"></div>
-                <div style="width:1px;height:80vh;background-color:#89C2D9;"></div>
-            </div>
-
-            <div class="corpsGrey" style="margin-top:2em">
-                <!-- Mes Projets -->
-                <p class="cvTitre" style="text-align:center;margin-bottom:20px">Mes Projets</p>
-                <p class="cvJob">Mon premier projet: blueSite</p>
-                <p class="cvLieu"></p>
-            </div>
-
-            <div class="graph3">
-                <div style="width:1px;height:80vh;background-color:#61A5C2;"></div>
-                <div style="width:1px;height:50vh;background-color:#61A5C2;"></div>
-                <!-- <div style="width:1px;height:10vh;background-color:#61A5C2;"></div> -->
-            </div>
-        </div>
-    
-    </div>
-    </div>
-</div>
-
 <script src="main.js"></script>
 </body>
 </html>
