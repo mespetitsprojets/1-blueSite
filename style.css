@@ -216,10 +216,10 @@ img{
 }
 
 .mesProjetsCentered{
-    margin-top:2vw;
-    margin-bottom:5vw;
-    margin-left:5vw;
-    margin-right:5vw;
+    margin-top:1em;
+    margin-left:5em;
+    margin-right:5em;
+
     text-justify: inter-word;
     text-align: center
     }
