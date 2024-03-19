@@ -124,14 +124,14 @@
 
 .milieu{
     display: flex;
-    height:calc(100vh - 70px);
+    min-height:calc(100vh - 70px);
     width:100%;
     padding-top:70px;
 }
 
 .milieu-scroll{
     display: flex;
-    height:100vh;
+    min-height:100vh;
     width:100%;
 }
 
