@@ -200,11 +200,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .column{
-    flex-wrap: wrap;
     height:auto;
     width: 300px;
     margin-left:0.5vw;
@@ -393,7 +391,7 @@ margin-top:2px;
     opacity:0.9;
 }
 
-/* MEDIA */
+/* MEDIA -- HOVER */
 
 @media screen and (min-width:1024px){
 
@@ -423,7 +421,7 @@ margin-top:2px;
     }
 }
 
-/* MEDIA */
+/* MEDIA -- SMARTPHONE */
 
 @media screen and (max-width:767px){  
 
@@ -455,6 +453,10 @@ margin-top:2px;
         margin-top:1vw;
         margin-bottom:1vw;
 
+    }
+
+    .column-container{
+        flex-wrap: wrap;
     }
 
     .Nom{
